@@ -10,13 +10,10 @@
 <body>
     
     <header class="header bg-primary">
-        <div class="title is-4 pt-2 mb-0 has-text-right">
-            Le meilleur pour l'education
-        </div>
         <nav class="navbar is-dark bg-primary" role="navigation" aria-label="main navigation">
 
             <div class="navbar-brand">
-              <a class="navbar-item image is-64x64">
+              <a class="navbar-item logo">
                 <img src="assets/img/logo.jpeg">
               </a>
           
@@ -35,13 +32,16 @@
                     <a class="navbar-item" href="cours.html">
                         Cours
                     </a>
-                    <a class="navbar-item">
+                    <a class="navbar-item" href="faq.html">
+                        FAQ
+                    </a>
+                    <a class="navbar-item" href="equipement.html">
                         Equipements
                     </a>
-                    <a class="navbar-item">
+                    <a class="navbar-item" href="enseignants.html">
                         Enseignants
                     </a>
-                    <a class="navbar-item">
+                    <a class="navbar-item" href="#">
                         Contact
                     </a>
                 </div>
@@ -136,5 +136,13 @@
     </footer>
 
     <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+    <script>
+        const nav = document.querySelector('.navbar-burger');
+
+        nav.onclick = () => {
+            nav.classList.toggle('is-active');
+            document.querySelector('.navbar-menu').classList.toggle('is-active');
+        }
+    </script>
 </body>
 </html>
