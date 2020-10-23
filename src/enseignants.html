@@ -6,6 +6,7 @@
     <title>School Solution</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" href="assets/css/accueil.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 <body>
     
@@ -28,9 +29,6 @@
                 <div class="navbar-start">
                     <a class="navbar-item" href="index.html">
                         Acceuil
-                    </a>
-                    <a class="navbar-item" href="cours.html">
-                        Cours
                     </a>
                     <a class="navbar-item" href="faq.html">
                         FAQ
@@ -77,13 +75,55 @@
     <main class="container mb-6">
 
        <h1 class="title">Les meilleurs professeurs </h1>
-       
+
        <div id="root"></div>
+       
+       <div class="columns is-multiline">
+            <div class="column is-one-quarter">
+                <div class="box">
+                    <div class="image is-square">
+                        <img src="assets/img/professor_2.jpg" class="is-rounded" alt="">
+                    </div>
+                    <p class="title is-4 has-text-centered mt-3">Annie Eurless</p>
+                    <p class="title is-5 has-text-centered">7.6 <i class="fas fa-star has-text-warning"></i></p>
+                    <div class="buttons">
+                        <button class="button is-info">Donnez son avis</button>
+                        <button class="button is-info">Notez</button>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-one-quarter">
+                <div class="box">
+                    <div class="image is-square">
+                        <img src="assets/img/professor_4.jpg" class="is-rounded" alt="">
+                    </div>
+                    <p class="title is-4 has-text-centered mt-3">Alex West</p>
+                    <p class="title is-5 has-text-centered"> 8 <i class="fas fa-star has-text-warning"></i></p>
+                    <div class="buttons">
+                        <button class="button is-info">Donnez son avis</button>
+                        <button class="button is-info">Notez</button>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-one-quarter">
+                <div class="box">
+                    <div class="image is-square">
+                        <img src="assets/img/professor_3.jpg" class="is-rounded" alt="">
+                    </div>
+                    <p class="title is-4 has-text-centered mt-3">Cecil Kelly</p>
+                    <p class="title is-5 has-text-centered">5.5 <i class="fas fa-star has-text-warning"></i></p>
+                    <div class="buttons">
+                        <button class="button is-info">Donnez son avis</button>
+                        <button class="button is-info">Notez</button>
+                    </div>
+                </div>
+            </div>
+       </div>
         
     </main>
 
-    <footer class="level has-background-primary">
-        <div class="container">
+    <footer class="bg-primary has-text-white py-2 is-relative">
+        <div class="container level">
             <div class="level-left">
                 <div class="level-item">
                     <div>
@@ -93,7 +133,8 @@
                     </div>
                 </div>
             </div>
-            <div class="level-right ">
+            <div class="line"></div>
+            <div class="level-right">
                 <div class="level-item has-text-centered">
                     <p>Suivez nous sur Facebook</p>
                 </div>
@@ -101,6 +142,7 @@
         </div>
     </footer>
 
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
     <script>
         const nav = document.querySelector('.navbar-burger');
