@@ -10,13 +10,10 @@
 <body>
     
     <header class="header bg-primary">
-        <div class="title is-4 pt-2 mb-0 has-text-right">
-            Le meilleur pour l'education
-        </div>
         <nav class="navbar is-dark bg-primary" role="navigation" aria-label="main navigation">
 
             <div class="navbar-brand">
-              <a class="navbar-item image is-64x64">
+              <a class="navbar-item logo">
                 <img src="assets/img/logo.jpeg">
               </a>
           
@@ -35,13 +32,16 @@
                     <a class="navbar-item" href="cours.html">
                         Cours
                     </a>
-                    <a class="navbar-item">
+                    <a class="navbar-item" href="faq.html">
+                        FAQ
+                    </a>
+                    <a class="navbar-item" href="equipement.html">
                         Equipements
                     </a>
-                    <a class="navbar-item">
+                    <a class="navbar-item" href="enseignants.html">
                         Enseignants
                     </a>
-                    <a class="navbar-item">
+                    <a class="navbar-item" href="#">
                         Contact
                     </a>
                 </div>
@@ -67,60 +67,18 @@
         </nav>
     </header>
 
-    <div class="filters py-2">
+    <div class="filters py-1 has-background-danger has-text-white">
 
-        <!-- Les filtres pour les cours -->
-          
-        <div class="dropdown is-hoverable">
-        <div class="dropdown-trigger">
-            <button class="button border-none" aria-haspopup="true" aria-controls="dropdown-menu4">
-            <span>Ville</span>
-            <span class="icon is-small">
-                <i class="fas fa-angle-down" aria-hidden="true"></i>
-            </span>
-            </button>
-        </div>
-        <div class="dropdown-menu" id="dropdown-menu4" role="menu">
-            <div class="dropdown-content">
-                <div class="dropdown-item">
-                    <p>You can insert <strong>any type of content</strong> within the dropdown menu.</p>
-                </div>
-            </div>
-        </div>
-        </div>
-        <div class="dropdown is-hoverable">
-        <div class="dropdown-trigger">
-            <button class="button border-none" aria-haspopup="true" aria-controls="dropdown-menu4">
-            <span>Quartier</span>
-            <span class="icon is-small">
-                <i class="fas fa-angle-down" aria-hidden="true"></i>
-            </span>
-            </button>
-        </div>
-        <div class="dropdown-menu" id="dropdown-menu4" role="menu">
-            <div class="dropdown-content">
-                <div class="dropdown-item">
-                    <p>You can insert <strong>any type of content</strong> within the dropdown menu.</p>
-                </div>
-            </div>
-        </div>
-        </div>
+        <!-- Publicite de cour a domicile -->
+        <p>Cours de math domicile : contactez nous sur le 066 24 56 78</p>
 
     </div>
 
     <main class="container mb-6">
 
-       <div class="columns">
-            <div class="column is-half">
-                <div class="course">
-                    <h1 class="title is-4 has-text-centered">Cours a domicile</h1>
-                    <div class="image is-square">
-                        <video src="" poster="https://www.techni-contact.com/ressources/images/produits/zoom/5869422-1.jpg"></video>
-                    </div>
-                </div>
-            </div>
-            
-       </div>
+       <h1 class="title">Les meilleurs professeurs </h1>
+       
+       <div id="root"></div>
         
     </main>
 
@@ -144,5 +102,13 @@
     </footer>
 
     <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+    <script>
+        const nav = document.querySelector('.navbar-burger');
+
+        nav.onclick = () => {
+            nav.classList.toggle('is-active');
+            document.querySelector('.navbar-menu').classList.toggle('is-active');
+        }
+    </script>
 </body>
 </html>

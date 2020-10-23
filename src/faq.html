@@ -10,9 +10,9 @@
 <body>
     
     <header class="header bg-primary">
-        <div class="title is-4 pt-2 mb-0 has-text-right is-light">
+        <!-- <div class="title is-4 pt-2 mb-0 has-text-right is-light">
             Le meilleur pour l'education
-        </div>
+        </div> -->
         <nav class="navbar is-dark bg-primary" role="navigation" aria-label="main navigation">
 
             <div class="navbar-brand">
@@ -72,27 +72,15 @@
 
     <div id="app"></div>
 
-    <!-- <footer class="bg-primary has-text-white py-2 is-relative footer">
-        <div class="container level">
-            <div class="level-left">
-                <div class="level-item">
-                    <div>
-                        <p>School Solution</p>
-                        <p>Societe de Service</p>
-                        <p>Situe a Bikele</p>
-                    </div>
-                </div>
-            </div>
-            <div class="line"></div>
-            <div class="level-right">
-                <div class="level-item has-text-centered">
-                    <p>Suivez nous sur Facebook</p>
-                </div>
-            </div>
-        </div>
-    </footer> -->
-
-    <script src="index.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+    <script src="index.js"></script>
+    <script>
+        const nav = document.querySelector('.navbar-burger');
+
+        nav.onclick = () => {
+            nav.classList.toggle('is-active');
+            document.querySelector('.navbar-menu').classList.toggle('is-active');
+        }
+    </script>
 </body>
 </html>

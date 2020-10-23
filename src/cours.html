@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School Solution</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/accueil.css">
 </head>
 <body>
     
     <header class="header bg-primary">
-        <div class="title is-4 pt-2 mb-0 has-text-right is-white">
+        <!-- <div class="title is-4 pt-2 mb-0 has-text-right is-white">
             Le meilleur pour l'education
-        </div>
+        </div> -->
         <nav class="navbar is-dark bg-primary" role="navigation" aria-label="main navigation">
 
             <div class="navbar-brand">
-              <a class="navbar-item image is-64x64">
+              <a class="navbar-item logo">
                 <img src="assets/img/logo.jpeg">
               </a>
           
@@ -38,13 +39,13 @@
                     <a class="navbar-item" href="faq.html">
                         FAQ
                     </a>
-                    <a class="navbar-item">
+                    <a class="navbar-item" href="equipement.html">
                         Equipements
                     </a>
-                    <a class="navbar-item">
+                    <a class="navbar-item" href="enseignants.html">
                         Enseignants
                     </a>
-                    <a class="navbar-item">
+                    <a class="navbar-item" href="#">
                         Contact
                     </a>
                 </div>
@@ -85,9 +86,15 @@
         </div>
         <div class="dropdown-menu" id="dropdown-menu4" role="menu">
             <div class="dropdown-content">
-                <div class="dropdown-item">
-                    <p>You can insert <strong>any type of content</strong> within the dropdown menu.</p>
-                </div>
+                <a class="dropdown-item">
+                    2nd
+                </a>
+                <a class="dropdown-item">
+                    1er
+                </a>
+                <a class="dropdown-item">
+                    Terminal
+                </a>
             </div>
         </div>
         </div>
@@ -102,9 +109,12 @@
         </div>
         <div class="dropdown-menu" id="dropdown-menu4" role="menu">
             <div class="dropdown-content">
-                <div class="dropdown-item">
-                    <p>You can insert <strong>any type of content</strong> within the dropdown menu.</p>
-                </div>
+                <a class="dropdown-item">
+                    Licence
+                </a>
+                <a class="dropdown-item">
+                    Master
+                </a>
             </div>
         </div>
         </div>
@@ -119,9 +129,18 @@
         </div>
         <div class="dropdown-menu" id="dropdown-menu4" role="menu">
             <div class="dropdown-content">
-                <div class="dropdown-item">
-                    <p>You can insert <strong>any type of content</strong> within the dropdown menu.</p>
-                </div>
+                <a class="dropdown-item">
+                    Math
+                </a>
+                <a class="dropdown-item">
+                    Francais
+                </a>
+                <a class="dropdown-item">
+                    Science Physique
+                </a>
+                <a class="dropdown-item">
+                    Economie
+                </a>
             </div>
         </div>
         </div>
@@ -132,46 +151,46 @@
 
         <div class="products columns is-multiline">
             <!-- Cours video -->
-            <div class="column is-one-third">
-                <h3 class="title is-5">Cours video</h3>
-                <div class="box">
+            <div class="column is-one-third" data-aos="fade-right" data-aos-duration="1500">
+                <h3 class="title is-5">Cours video <a class="title is-6 has-text-link"><i class="fas fa-arrow-right"></i></a></h3>
+                <div class="box p-0 is-clipped">
                     <video controls>
                         <source src="assets/video/cours.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>  
             <!-- Cours Audio -->
-            <div class="column is-one-third">
-                <h3 class="title is-5">Cours Audio</h3>
-                <div class="image is-3by2 box">
-                    <img src="https://www.techni-contact.com/ressources/images/produits/zoom/5869422-1.jpg" alt="">
+            <div class="column is-one-third" data-aos="fade-down" data-aos-duration="1500">
+                <h3 class="title is-5">Cours Audio <a class="title is-6 has-text-link"><i class="fas fa-arrow-right"></i></a></h3>
+                <div class="image is-3by2 box is-clipped">
+                    <img src="https://images.pexels.com/photos/1591/technology-music-sound-things.jpg" alt="">
                 </div>
             </div>  
             <!-- Livres -->
-            <div class="column is-one-third">
-                <h3 class="title is-5">Livres</h3>
-                <div class="box book has-text-primary">
-                    <i class="fas fa-book-open"></i>
+            <div class="column is-one-third" data-aos="fade-left" data-aos-duration="1500">
+                <h3 class="title is-5">Livres <a class="title is-6 has-text-link"><i class="fas fa-arrow-right"></i></a></h3>
+                <div class="image is-3by2 box is-clipped">
+                    <img src="assets/img/livre.jpeg" alt="">
                 </div>
             </div>  
             <!-- Cours PDF -->
-            <div class="column is-one-third">
-                <h3 class="title is-5">Cours PDF</h3>
+            <div class="column is-one-third" data-aos="fade-up-right" data-aos-duration="1500">
+                <h3 class="title is-5">Cours PDF <a class="title is-6 has-text-link"><i class="fas fa-arrow-right"></i></a></h3>
                 <div class="box pdf-content">
                     <i class="fas fa-file-pdf has-text-danger pdf-icon"></i>
-                    <a href="assets/img/Notes_201023_084411_f75.pdf">Telecharger <i class="fas fa-download    "></i></a>
+                    <a href="assets/img/Notes_201023_084411_f75.pdf">Telecharger <i class="fas fa-download"></i></a>
                 </div>
             </div>  
             <!-- Examen/Concours -->
-            <div class="column is-one-third">
-                <h3 class="title is-5">Examen/Concours</h3>
-                <div class="image is-3by2 box">
-                    <img src="https://www.techni-contact.com/ressources/images/produits/zoom/5869422-1.jpg" alt="">
+            <div class="column is-one-third" data-aos="fade-up" data-aos-duration="1500">
+                <h3 class="title is-5">Examen/Concours <a class="title is-6 has-text-link"><i class="fas fa-arrow-right"></i></a></h3>
+                <div class="image is-3by2 box is-clipped">
+                    <img src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg" alt="">
                 </div>
             </div>  
             <!-- Autres -->
-            <div class="column is-one-third">
-                <h3 class="title is-5">Autres</h3>
+            <div class="column is-one-third" data-aos="fade-up-left" data-aos-duration="1500">
+                <h3 class="title is-5">Autres <a class="title is-6 has-text-link"><i class="fas fa-arrow-right"></i></a></h3>
                 <div class="image is-3by2 box">
                     <img src="https://www.techni-contact.com/ressources/images/produits/zoom/5869422-1.jpg" alt="">
                 </div>
@@ -200,5 +219,15 @@
     </footer>
 
     <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        const nav = document.querySelector('.navbar-burger');
+
+        nav.onclick = () => {
+            nav.classList.toggle('is-active');
+            document.querySelector('.navbar-menu').classList.toggle('is-active');
+        }
+    </script>
 </body>
 </html>
